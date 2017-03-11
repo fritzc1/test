@@ -1,8 +1,9 @@
 import java.awt.*;
 import java.awt.event.*;
+/*
 import javax.swing.*;
 import javax.swing.event.*;
-
+*/
 public class hello {
 	private Frame mainFrame;
 	private Label headerLabel;
@@ -15,8 +16,8 @@ public class hello {
 	}
 	
 	public static void main(String[] args){
-		hello hello = new hello();
-		hello.showFrameDemo();
+		hello hellow = new hello();
+		hellow.showFrameDemo();
 	}
 	
 	private void prepareGUI(){
