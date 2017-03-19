@@ -10,17 +10,22 @@ public class hello {
 	private Label statusLabel;
 	private Panel controlPanel;
 	private Label msglabel;
+	private String userInput;
 	
-	/* constructor method for "hello" class */
-	public hello(){
+	// constructor method for "hello" class
+	// This is a method to set initial program values for hello
+	// When the object "hello" is created, Java calls the constructor first
+	public hello(String inputValExample){
 		prepareGUI();
+		// We can pass an initial value into the constructor for each "hello" object created
+		userInput = inputValExample;
 	}
 	
 	public static void main(String[] args){
-		hello hellow = new hello();
+		hello hellow = new hello("mainin1");
 		hellow.showFrameDemo();
 		/* experiment trying to make two main frames */
-		hello hellow2 = new hello();
+		hello hellow2 = new hello("mainin2");
 		hellow2.showFrameDemo();
 	}
 	
@@ -54,7 +59,7 @@ public class hello {
 	}
 	
 	private void showFrameDemo(){
-		headerLabel.setText("Container in action: Frame");
+		headerLabel.setText(userInput);
 		
 		final Frame frame = new Frame();
 		frame.setSize(300, 300);
