@@ -11,6 +11,7 @@ public class hello {
 	private Panel controlPanel;
 	private Label msglabel;
 	
+	/* constructor method for "hello" class */
 	public hello(){
 		prepareGUI();
 	}
@@ -20,11 +21,12 @@ public class hello {
 		hellow.showFrameDemo();
 	}
 	
+	/* Builds GUI frames */
 	private void prepareGUI(){
 		mainFrame = new Frame("Java AWT Examples");
 		mainFrame.setSize(400, 400);
 		mainFrame.setLayout(new GridLayout(3, 1));
-		mainFrame.addWindowStateListener(new WindowAdapter() {
+		mainFrame.addWindowListener(new WindowAdapter() {
 			public void windowClosing(WindowEvent windowEvent){
 				System.exit(0);
 			}
