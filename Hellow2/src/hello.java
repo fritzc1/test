@@ -19,6 +19,9 @@ public class hello {
 	public static void main(String[] args){
 		hello hellow = new hello();
 		hellow.showFrameDemo();
+		/* experiment trying to make two main frames */
+		hello hellow2 = new hello();
+		hellow2.showFrameDemo();
 	}
 	
 	/* Builds GUI frames */
